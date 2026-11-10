@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" role="img" aria-label="YBS bus">
+  <rect width="320" height="160" fill="#eef2f6"/>
+  <rect x="0" y="128" width="320" height="32" fill="#cfd8dc"/>
+  <rect x="20" y="36" width="280" height="86" rx="14" fill="#1565c0"/>
+  <rect x="20" y="92" width="280" height="14" fill="#fdd835"/>
+  <g fill="#e3f2fd">
+    <rect x="34" y="48" width="44" height="30" rx="4"/>
+    <rect x="86" y="48" width="44" height="30" rx="4"/>
+    <rect x="138" y="48" width="44" height="30" rx="4"/>
+    <rect x="190" y="48" width="44" height="30" rx="4"/>
+    <rect x="248" y="46" width="44" height="40" rx="6"/>
+  </g>
+  <g fill="#263238">
+    <circle cx="80" cy="124" r="16"/>
+    <circle cx="240" cy="124" r="16"/>
+  </g>
+  <g fill="#90a4ae">
+    <circle cx="80" cy="124" r="7"/>
+    <circle cx="240" cy="124" r="7"/>
+  </g>
+  <text x="160" y="22" font-family="Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#37474f">YBS</text>
+</svg>
