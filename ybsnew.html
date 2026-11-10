@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YBS Bus Guide | Yangon bus lines, gates, rain and traffic</title>
+  <meta name="description" content="Yangon Bus Service (YBS) lines, gates, operating hours, live rain and traffic check. English and Burmese.">
+  <meta name="theme-color" content="#f5b400">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Noto+Sans+Myanmar:wght@300;400;600&family=Noto+Serif+Myanmar:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ybs.css">
+</head>
+<body class="ybs-page" data-lang="en">
+
+  <div class="notice">
+    <span class="en">Independent, free guide. Not a government website. Always confirm at the bus stop.</span>
+    <span class="my">လွတ်လပ်သော အခမဲ့လမ်းညွှန်။ အစိုးရဝဘ်ဆိုက်မဟုတ်ပါ။ ဘတ်စ်ကားမှတ်တိုင်တွင် အမြဲအတည်ပြုပါ။</span>
+  </div>
+
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="index.html"><b>🚌</b><span class="en">YBS Bus Guide</span><span class="my">YBS ဘတ်စ်ကား လမ်းညွှန်</span></a>
+      <div class="act">
+        <a class="btn ghost sm" href="index.html">← <span class="en">Home</span><span class="my">ပင်မစာမျက်နှာ</span></a>
+        <button id="lang" type="button"><span class="l-en">မြန်မာ</span><span class="l-my">English</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow"><span class="en">Yangon Bus Service</span><span class="my">ရန်ကုန်ဘတ်စ်ကား</span></span>
+      <h1><span class="en">Which <mark>YBS bus</mark> goes where?</span><span class="my"><mark>YBS ဘတ်စ်ကား</mark> ဘယ်ကိုသွားလဲ</span></h1>
+      <p><span class="en">Find your bus number, its gates and its hours, and check rain and traffic before you leave.</span><span class="my">ဘတ်စ်ကားနံပါတ်၊ ဂိတ်များနှင့် အချိန်ကို ရှာပြီး မထွက်ခင် မိုးနှင့် ယာဉ်ကြောကို စစ်ပါ။</span></p>
+    </section>
+
+    <!-- Rain + traffic -->
+    <div class="widgets" aria-label="Weather and traffic">
+      <article class="widget" id="weatherBox">
+        <h2><span class="en">Weather in Yangon</span><span class="my">ရန်ကုန်ရာသီဥတု</span></h2>
+        <div class="status">
+          <span class="icon" id="wIcon">⏳</span>
+          <div>
+            <div class="big" id="wText"><span class="en">Checking…</span><span class="my">စစ်ဆေးနေသည်…</span></div>
+            <div class="small" id="wSub"></div>
+          </div>
+        </div>
+        <span class="pill na" id="wPill">…</span>
+        <div class="links">
+          <a class="btn sm" target="_blank" rel="noopener" href="https://www.google.com/search?q=weather+Yangon"><span class="en">Open Google Weather</span><span class="my">Google ရာသီဥတုကြည့်ရန်</span></a>
+        </div>
+        <p class="note"><span class="en">Live reading from Open-Meteo, refreshed every 10 minutes. Use the Google link to double-check.</span><span class="my">Open-Meteo မှ တိုက်ရိုက်ဖတ်ရှုချက်ဖြစ်ပြီး ၁၀ မိနစ်တစ်ခါ ပြင်ဆင်သည်။ Google လင့်ခ်ဖြင့် ထပ်စစ်နိုင်သည်။</span></p>
+      </article>
+
+      <article class="widget" id="trafficBox">
+        <h2><span class="en">Traffic</span><span class="my">ယာဉ်ကြော</span></h2>
+        <div class="status">
+          <span class="icon" id="tIcon">🚦</span>
+          <div>
+            <div class="big" id="tText"><span class="en">Checking…</span><span class="my">စစ်ဆေးနေသည်…</span></div>
+            <div class="small" id="tSub"></div>
+          </div>
+        </div>
+        <span class="pill na" id="tPill">…</span>
+        <div class="links">
+          <a class="btn sm" target="_blank" rel="noopener" href="https://www.google.com/maps/@16.8000,96.1600,12z/data=!5m1!1e1"><span class="en">Live traffic – Google Maps</span><span class="my">တိုက်ရိုက်ယာဉ်ကြော – Google Maps</span></a>
+          <a class="btn ghost sm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Sule+Pagoda,+Yangon&travelmode=transit"><span class="en">Bus route to Sule</span><span class="my">ဆူးလေသို့ ဘတ်စ်လမ်းကြောင်း</span></a>
+        </div>
+        <p class="note"><span class="en">The status above is an estimate from Yangon rush hours. Open Google Maps for real live traffic colors.</span><span class="my">အထက်ပါအခြေအနေသည် ရန်ကုန်၏ ကားပိတ်ချိန်အပေါ် အခြေခံသော ခန့်မှန်းချက်ဖြစ်သည်။ အမှန်တကယ် ယာဉ်ကြောအရောင်ကို Google Maps တွင် ကြည့်ပါ။</span></p>
+      </article>
+    </div>
+
+    <!-- Bus photo reference -->
+    <section class="photos-sec" aria-label="Bus photos">
+      <div class="photos">
+        <figure>
+          <img src="ybs-bus-1.jpg" alt="YBS bus, front view" onerror="this.onerror=null;this.src='ybs-bus.svg';">
+          <figcaption><span class="en">YBS standard bus (front)</span><span class="my">YBS ဘတ်စ်ကား (ရှေ့ပိုင်း)</span></figcaption>
+        </figure>
+        <figure>
+          <img src="ybs-bus-2.jpg" alt="YBS bus, side view" onerror="this.onerror=null;this.src='ybs-bus.svg';">
+          <figcaption><span class="en">Side view – check the line number above the windscreen</span><span class="my">ဘေးမှမြင်ကွင်း – မှန်ပေါ်ရှိ နံပါတ်ကို ကြည့်ပါ</span></figcaption>
+        </figure>
+        <figure>
+          <img src="ybs-bus-3.jpg" alt="YBS bus stop" onerror="this.onerror=null;this.src='ybs-bus.svg';">
+          <figcaption><span class="en">Bus stop reference</span><span class="my">ဘတ်စ်ကားမှတ်တိုင်</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section aria-label="Find a bus">
+      <div class="sec-h">
+        <span class="tag"><span class="en">All lines</span><span class="my">လိုင်းအားလုံး</span></span>
+        <h2><span class="en">Find your bus</span><span class="my">သင့်ဘတ်စ်ကားကို ရှာပါ</span></h2>
+      </div>
+      <div class="controls">
+        <input type="search" id="q" placeholder="40, Sule, သခင်မြ…" autocomplete="off" aria-label="Search">
+        <label><input type="checkbox" id="only24"> <span class="en">24-hour only</span><span class="my">၂၄ နာရီသာ</span></label>
+        <label><input type="checkbox" id="onlyNow"> <span class="en">Running now</span><span class="my">ယခုပြေးနေသည်</span></label>
+      </div>
+      <div class="legend" id="legend" aria-label="Filter by city gate color"></div>
+      <p class="count" id="count"></p>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <footer class="foot">
+      <span class="en">Routes and gate names compiled from public YBS route listings (e.g. yangon-bus-service.site). Hours are typical service hours; individual lines may run shorter or longer. Colors group buses by their city-side gate.</span>
+      <span class="my">လမ်းကြောင်းနှင့် ဂိတ်အမည်များကို အများပြည်သူ YBS စာရင်းများမှ စုစည်းထားသည်။ အချိန်များသည် ပုံမှန်ဝန်ဆောင်မှုအချိန်ဖြစ်ပြီး လိုင်းအလိုက် ကွာနိုင်သည်။ အရောင်များသည် မြို့တွင်းဘက်ဂိတ်အလိုက် အုပ်စုခွဲထားသည်။</span>
+    </footer>
+  </main>
+
+  <script src="ybs.js"></script>
+</body>
+</html>
