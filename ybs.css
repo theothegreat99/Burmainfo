@@ -1,0 +1,101 @@
+/* ybs.css — YBS page, matched to the Myanmar Passport Guide gold/cream theme */
+:root{--gold:#f5b400;--gold2:#ffd84a;--gold3:#d99a00;--ink:#1f1d18;--mut:#6b675b;--line:#eee9d8;--cream:#fffaf0;--sh:0 1px 2px #0001,0 10px 30px #b8860b14}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font:300 17px/1.7 Inter,"Noto Sans Myanmar",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.logo{font-family:"Cormorant Garamond","Noto Serif Myanmar",Georgia,serif;font-weight:500;letter-spacing:-.01em;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:auto;padding:0 22px}
+strong{font-weight:600}
+
+/* language toggle (same rules as index.html) */
+body[data-lang=en] .my,body[data-lang=my] .en{display:none!important}
+body[data-lang=en] .l-my,body[data-lang=my] .l-en{display:none}
+
+/* notice + header */
+.notice{background:var(--cream);border-bottom:1px solid var(--line);text-align:center;font-size:13px;color:var(--mut);padding:7px 14px}
+header{position:sticky;top:0;z-index:20;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}
+.logo{display:flex;gap:10px;align-items:center;text-decoration:none;font-size:23px;font-weight:600}
+.logo b{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:18px;background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:inset 0 1px 0 #fff9}
+.act{display:flex;gap:8px;align-items:center}
+button#lang{font:500 14px Inter,"Noto Sans Myanmar",sans-serif;background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer;color:var(--ink)}
+button#lang:hover{border-color:var(--gold)}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:600 15px/1.2 Inter,"Noto Sans Myanmar",sans-serif;color:#2b2100;padding:13px 24px;border-radius:12px;border:1px solid var(--gold3);cursor:pointer;
+background:linear-gradient(180deg,#ffe36e 0%,var(--gold) 52%,#eaa800 100%);box-shadow:inset 0 1px 0 #fffb,0 6px 16px #f5b40055;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 #fffb,0 10px 24px #f5b40077}
+.btn.ghost{background:#fff;box-shadow:none;border:1.5px solid var(--gold)}
+.btn.sm{padding:9px 16px;font-size:14px}
+
+/* hero */
+.hero{padding:44px 0 18px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold3);margin-bottom:12px}
+.hero h1{font-size:clamp(36px,7vw,58px);font-weight:400}
+mark{background:linear-gradient(180deg,transparent 62%,#ffd84a99 62%);color:inherit;padding:0 4px}
+.hero p{font-size:18px;color:var(--mut);margin:16px 0 0;max-width:620px}
+
+/* weather + traffic */
+.widgets{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:26px 0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--sh);padding:22px}
+.widget h2{font-size:26px;margin-bottom:12px}
+.status{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.status .icon{font-size:2.3rem;line-height:1}
+.status .big{font:500 24px/1.2 "Cormorant Garamond","Noto Serif Myanmar",serif}
+.status .small{color:var(--mut);font-size:14px}
+.pill{display:inline-block;padding:4px 12px;border-radius:99px;font-size:12px;font-weight:600;letter-spacing:.04em;color:#fff}
+.pill.ok{background:#2e7d32}.pill.warn{background:#ef6c00}.pill.bad{background:#c62828}.pill.na{background:#8a8676}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.note{font-size:13px;color:var(--mut);margin:12px 0 0;line-height:1.55}
+
+/* photos */
+.photos-sec{padding:4px 0 8px}
+.photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.photos figure{margin:0;background:var(--cream);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--sh)}
+.photos img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#f7f1dc}
+.photos figcaption{padding:10px 14px;font-size:14px;color:var(--mut)}
+
+/* sections */
+section{padding:34px 0 6px}
+.sec-h{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.sec-h h2{font-size:clamp(32px,5vw,44px)}
+.tag{align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:linear-gradient(180deg,#ffe36e,var(--gold));padding:5px 12px;border-radius:99px;color:#2b2100}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-bottom:14px}
+.controls input[type=search]{flex:1 1 260px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);font:400 16px Inter,"Noto Sans Myanmar",sans-serif;background:#fff}
+.controls input[type=search]:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+.controls label{display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:400;cursor:pointer}
+.controls input[type=checkbox]{accent-color:var(--gold3);width:17px;height:17px}
+
+/* legend / gate color filter */
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:99px;border:2px solid var(--c);background:#fff;font:500 13.5px Inter,"Noto Sans Myanmar",sans-serif;cursor:pointer;color:var(--ink)}
+.chip .dot{width:12px;height:12px;border-radius:50%;background:var(--c)}
+.chip[aria-pressed=true]{background:var(--c);color:#fff}
+.chip[aria-pressed=true] .dot{background:#fff}
+.count{color:var(--mut);font-size:14px;margin:0 0 12px}
+
+/* route cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-top:6px solid var(--c);border-radius:18px;box-shadow:var(--sh);padding:16px 18px;display:flex;flex-direction:column;gap:9px}
+.card header{position:static;background:none;backdrop-filter:none;border:0;display:flex;align-items:center;gap:12px}
+.num{min-width:58px;padding:6px 10px;text-align:center;border-radius:12px;background:var(--c);color:#fff;font:700 22px/1.1 Inter,sans-serif}
+.num small{display:block;font-size:9px;font-weight:600;opacity:.9;letter-spacing:.1em}
+.variant{font-size:13px;color:var(--mut)}
+.gates{font-size:15px;font-weight:400}
+.gates .gate{display:block}
+.gates .gate b{color:var(--c);font-weight:600}
+.gates .mm{display:block;color:var(--mut);font-size:13px;font-family:"Noto Sans Myanmar",sans-serif}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:auto;font-size:14px}
+.hours{font-weight:600}
+.tg{padding:2px 9px;border-radius:7px;background:#f4f0e1;font-size:12px;font-weight:600}
+.tg.h24{background:#fff0b8;color:#6b4e00}
+.tg.live{background:#d9f2de;color:#1b5e20}
+.tg.off{background:#f9dcdc;color:#8e1b1b}
+.empty{padding:34px;text-align:center;color:var(--mut)}
+
+.foot{margin:34px 0 50px;font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding-top:16px}
+
+@media(max-width:520px){.grid{grid-template-columns:1fr}.logo{font-size:19px}}
